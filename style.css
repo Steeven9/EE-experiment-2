@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.spaced15 {
+    margin-bottom: 15px;
+}
+
+.mTop15 {
+    margin-top: 15px;
+}
+
+.vAlignMid {
+    vertical-align: middle;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    padding: 10px;
+}
+
+#word, #content {
+    margin-bottom: 50px;
+}
+
+.words:hover { 
+    cursor: pointer;
+}

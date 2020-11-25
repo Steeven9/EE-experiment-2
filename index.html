@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- E&E Experiment 2 - Stefano Taillefert, Andrea Brites Marto -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>E&amp;E experiment 2</title>
+		<meta name="author" value="Stefano Taillefert, Andrea Brites Marto">
+
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="words.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+	<body>
+		<h1>E&amp;E experiment 2</h1>
+
+		<div id="word"></div>
+		
+		<div id="content">
+			<div class="spaced15">
+				Name 
+				<input type="text" required placeholder="Name" id="nameField">
+			</div>
+			<div class="spaced15">
+				<label>
+					Are you a programmer? 
+					<input type="checkbox" required class="vAlignMid" id="programmerField">
+				</label>
+			</div>
+			<div class="spaced15">
+				<label>
+					Notes 
+					<textarea class="vAlignMid" id="notesField" placeholder="Notes"></textarea>
+				</label>
+			</div>
+			<div class="spaced15">
+				By clicking "Begin" you consent to the following terms:<br>
+				//TODO later
+			</div>
+		</div>
+
+		<button class="btn" id="nextPageBtn" onclick="renderPage()">Begin</button>
+	</body>
+</html>
