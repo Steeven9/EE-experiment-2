@@ -113,6 +113,7 @@ function renderPage() {
 		renderPage();
 	} else if (page == 2 * words.length + 1) {
 		//Last page of second case (true end)
+		document.querySelector("#box").classList.add("hide");
 		document.querySelector("#word").innerHTML = "Congratulations, " + 
 			name + "!";
 		
@@ -134,9 +135,17 @@ function renderPage() {
 				? words[page % words.length].camelCase
 				: words[page % words.length].kebabCase;
 
-		arr.forEach((el) => {
-			document.querySelector("#content").innerHTML +=
-				'<div class="words" onclick="checkWord(this)">' + el + '</div>';
-		});
+		let words0 = document.querySelector("#words0");
+		let words1 = document.querySelector("#words1");
+		let words2 = document.querySelector("#words2");
+
+		words0.innerHTML = '<div class="words" onclick="checkWord(this)">' + arr[0] + '</div>';
+		words0.innerHTML += '<div class="words" onclick="checkWord(this)">' + arr[1] + '</div>';
+
+		words1.innerHTML = '<div class="words" onclick="checkWord(this)">' + arr[2] + '</div>';
+
+		words2.innerHTML = '<div class="words" onclick="checkWord(this)">' + arr[3] + '</div>';
+		words2.innerHTML += '<div class="words" onclick="checkWord(this)">' + arr[4] + '</div>';
+
 	}
 }

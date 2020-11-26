@@ -39,3 +39,22 @@ h1 {
 .words:hover { 
     cursor: pointer;
 }
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.wordsCont {
+    display: flex;
+}
+
+#words0, #words2 {
+    justify-content: space-evenly;
+}
+
+#words1 {
+    justify-content: center;
+    padding: 60px 0;
+}
+
