@@ -32,8 +32,9 @@ h1 {
     padding: 10px;
 }
 
-#word, #content {
+#word {
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .words:hover { 

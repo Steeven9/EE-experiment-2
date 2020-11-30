@@ -41,7 +41,8 @@ function exportResults() {
 		programmer,
 		scores,
 		times,
-		notes
+		notes,
+		dateTime: new Date().toLocaleString()
 	};
 	let dataStr = JSON.stringify(jsonData);
 	let dataUri = "data:application/json;charset=utf-8," + 
@@ -132,8 +133,8 @@ function renderPage() {
 		//Select case array based on what we're testing (mode)
 		let arr =
 			mode == 0
-				? words[page % words.length].camelCase
-				: words[page % words.length].kebabCase;
+				? words[page % words.length].camelCaseList
+				: words[page % words.length].kebabCaseList;
 
 		let words0 = document.querySelector("#words0");
 		let words1 = document.querySelector("#words1");

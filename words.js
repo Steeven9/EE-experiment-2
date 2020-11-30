@@ -2,18 +2,99 @@
 
 // Note: the lists already include the correct word as well
 var words = [
-    {
-        word: 'test one',
-        camelCaseSolution: 'testOne',
-        kebabCaseSolution: 'test-one',
-        camelCase: ['testOne', 'testone', 'testoSterone', 'teszTone', 'testimone'],
-        kebabCase: ['test-one', 'test-cone', 'testo-sterone', 'tezt-one', 'testimone']
-    },
-    {
-        word: 'test two',
-        camelCaseSolution: 'testTwo',
-        kebabCaseSolution: 'test-two',
-        camelCase: ['testTwo', 'testtwo', 'testoStertwo', 'teztTwo', 'testiTon'],
-        kebabCase: ['test-two', 'test-ctwo', 'testo-stertwo', 'tezt-two', 'testwo']
-    }
+  {
+    word: "useless advice",
+    camelCase: "uselessAdvice",
+    kebabCase: "useless-advice",
+    camelCaseList: [
+      "uselessAdvice",
+      "uselessAdvise",
+      "ucelessAdvice",
+      "uselezsAdvice",
+      "uselessAbvise",
+    ],
+    kebabCaseList: [
+      "useless-advice",
+      "useless-advise",
+      "uceless-advice",
+      "uselezs-advice",
+      "useless-abvise",
+    ],
+  },
+  {
+    word: "high rate",
+    camelCase: "highRate",
+    kebabCase: "hight-rate",
+    camelCaseList: [
+      "highRate",
+      "hihgRate",
+      "hintRate",
+      "highRata",
+      "highRafe",
+    ],
+    kebabCaseList: [
+      "hight-rate",
+      "hihg-rate",
+      "hint-rate",
+      "high-rata",
+      "high-rafe",
+    ],
+  },
+  {
+    word: "security agency",
+    camelCase: "securityAgency",
+    kebabCase: "security-agency",
+    camelCaseList: [
+      "securityAgency",
+      "securytiAgency",
+      "securjtyAgensy",
+      "secutiryAgency",
+      "securifyAqency",
+    ],
+    kebabCaseList: [
+      "security-agency",
+      "securyti-agency",
+      "securjty-agensy",
+      "secutiry-agency",
+      "securify-aqency",
+    ],
+  },
+  {
+    word: "send selection sort",
+    camelCase: "sendSelectionSort",
+    kebabCase: "send-selection-sort",
+    camelCaseList: [
+      "sendSelectionSort",
+      "sendSelectiomSort",
+      "sendSelectionSord",
+      "sandSelectionSort",
+      "sendSelextionSort",
+    ],
+    kebabCaseList: [
+      "send-selection-sort",
+      "send-selectiom-sort",
+      "send-selection-sord",
+      "sand-selection-sort",
+      "send-selextion-sort",
+    ],
+  },
+  {
+    word: "change path settings",
+    camelCase: "changePathSettings",
+    kebabCase: "change-path-settings",
+    camelCaseList: [
+      "changePathSettings",
+      "changePathSettimgs",
+      "chanqePathSettings",
+      "changePadhSettings",
+      "changePathSeltings",
+    ],
+    kebabCaseList: [
+      "change-path-settings",
+      "change-path-settimgs",
+      "chanqe-path-settings",
+      "change-padh-settings",
+      "change-path-seltings",
+    ],
+  }
 ];
