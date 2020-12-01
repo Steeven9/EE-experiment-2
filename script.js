@@ -3,8 +3,8 @@
 // Shuffle everything
 shuffleArray(words);
 words.forEach((el) => {
-	shuffleArray(el.camelCase);
-	shuffleArray(el.kebabCase);
+	shuffleArray(el.camelCaseList);
+	shuffleArray(el.kebabCaseList);
 });
 
 var mode = Math.floor(Math.random() * 2); //0 = camelCase, 1 = kebab-case
@@ -66,8 +66,8 @@ function exportResults() {
 function checkWord(el) {
 	let solution =
 		mode == 0
-			? words[page % words.length].camelCaseSolution
-			: words[page % words.length].kebabCaseSolution;
+			? words[page % words.length].camelCase
+			: words[page % words.length].kebabCase;
 
 	if (el.innerHTML == solution) {
 		scores.push(1);
@@ -105,6 +105,7 @@ function renderPage() {
 		}
 
 		document.querySelector("#nextPageBtn").classList.add("hide");
+		document.querySelector("#box").classList.remove("hide");
 		++page;
 		renderPage();
 	} else if (page == words.length) {
