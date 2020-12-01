@@ -33,7 +33,7 @@ var words = [
       "highRafe",
     ],
     kebabCaseList: [
-      "hight-rate",
+      "high-rate",
       "hihg-rate",
       "hint-rate",
       "high-rata",
