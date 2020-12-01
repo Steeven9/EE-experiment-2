@@ -24,7 +24,7 @@ var words = [
   {
     word: "high rate",
     camelCase: "highRate",
-    kebabCase: "hight-rate",
+    kebabCase: "high-rate",
     camelCaseList: [
       "highRate",
       "hihgRate",
