@@ -35,6 +35,7 @@ h1 {
 #word {
     margin-bottom: 50px;
     text-align: center;
+    font-weight: bold;
 }
 
 .words:hover { 

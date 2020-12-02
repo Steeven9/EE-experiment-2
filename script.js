@@ -100,7 +100,7 @@ function renderPage() {
 		 
 
 		if (name.length == 0) {
-			alert("Please insert a name.");
+			alert("Please insert a valid name.");
 			return;
 		}
 
@@ -127,8 +127,8 @@ function renderPage() {
 	} else {
 		//All other pages
 		startTime = performance.now();
-		document.querySelector("#word").innerHTML = "Find " + 
-			words[page % words.length].word;
+		document.querySelector("#word").innerHTML = 'Find "' + 
+			words[page % words.length].word + '"';
 		document.querySelector("#content").innerHTML = "";
 
 		//Select case array based on what we're testing (mode)
