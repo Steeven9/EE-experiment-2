@@ -42,7 +42,8 @@ function exportResults() {
 		scores,
 		times,
 		notes,
-		dateTime: new Date().toLocaleString()
+		dateTime: new Date().toLocaleString(),
+		camelFirst: mode
 	};
 	let dataStr = JSON.stringify(jsonData);
 	let dataUri = "data:application/json;charset=utf-8," + 
