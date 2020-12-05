@@ -23,3 +23,6 @@ build/
 
 # User data
 data_*.json
+
+# Extracted build
+dist/EE-exp2-Taillefert-Brites
